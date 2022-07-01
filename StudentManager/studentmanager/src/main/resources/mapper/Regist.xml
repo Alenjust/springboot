@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Alenjust.studentmanager.mapper.RegisterMapper">
+    <!-- 学生注册用户方法 -->
+    <insert id="studentregister">
+        INSERT INTO s_student(sn, username, password, clazz_id, sex, mobile, qq)
+        VALUES (#{sn}, #{username}, #{password}, #{clazzId}, #{sex}, #{mobile}, #{qq})
+    </insert>
+    <!-- 教师注册用户方法 -->
+    <insert id="teacherregister">
+        INSERT INTO s_teacher(sn, username, password, clazz_id, sex, mobile, qq)
+        VALUES (#{sn}, #{username}, #{password}, #{clazzId}, #{sex}, #{mobile}, #{qq})
+    </insert>
+    <!-- admin注册用户方法 -->
+    <insert id="adminregister">
+        INSERT INTO s_admin(username, password)
+        VALUES (#{username}, #{password})
+    </insert>
+</mapper>

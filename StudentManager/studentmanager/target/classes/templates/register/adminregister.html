@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>管理员注册页面</title>
+<style type="text/css">
+body {
+	background-image: linear-gradient(95deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.form {
+	width: 123rem;
+	text-align: center;
+	margin: 18rem 0rem 0rem 16rem;
+}
+
+td {
+	color: #ceb0d4;
+}
+
+h3 {
+	color: #823ad9;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 1000;
+}
+
+.submit {
+	text-align: center;
+	width: 6rem;
+	text-decoration: none;
+	padding: 1rem 1rem;
+	margin: 1rem 1rem 1rem -1rem;
+	border-radius: calc(0.5rem);
+	position: absolute;
+	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	color: dodgerblue;
+}
+
+input {
+	margin: 1rem 1rem 1rem 1rem;
+	padding: 0.3rem 5rem 0rem 5rem;
+}
+</style>
+</head>
+<body>
+	<div class="form">
+		<form th:action="@{/adminregister}" method="post">
+			<table border="0" cellspacing="0" cellpadding="0" align="center">
+				<h3>管理员注册页面</h3>
+				<tr>
+					<td>用户名:</td>
+					<td><input type="text" name="username"></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+			</table>
+			<input type="submit" value="注册" class="submit">
+		</form>
+	</div>
+</body>
+</html>

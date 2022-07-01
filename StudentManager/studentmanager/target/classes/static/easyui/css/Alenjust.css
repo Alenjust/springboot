@@ -1,0 +1,33 @@
+.datagrid-header-inner {
+    float: left;
+    width: 10000px;
+    background-color: #5771f1;
+}
+
+datagrid-td-rownumber {
+    background-color: #07ff3c;
+}
+
+.datagrid-view1 {
+    background-color: #5771f1;
+}
+
+.tabs-header, .tabs-tool {
+    background-color: #5771f1;
+}
+
+.panel-header {
+    background-color: #5771f1;
+}
+
+ul .tabs {
+    background-color: #5771f1;
+}
+
+.datagrid-toolbar {
+    background-color: #5771f1;
+}
+
+.datagrid-toolbar, .datagrid-pager {
+    background-color: #c5f9d0;
+}
